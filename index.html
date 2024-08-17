@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="calculator">calc</div>
+      <input id="display" disabled="true" />
+      <div class="number-operators">
+        <div class="calculation">
+          <button onclick="displayValue('7','number')" class="num" id="seven">
+            7
+          </button>
+          <button onclick="displayValue('8','number')" class="num" id="eight">
+            8
+          </button>
+          <button onclick="displayValue('9','number')" class="num" id="nine">
+            9
+          </button>
+          <button onclick="deleteValue()" class="num" id="del">DEL</button>
+          <button onclick="displayValue('4','number')" class="num" id="four">
+            4
+          </button>
+          <button onclick="displayValue('5','number')" class="num" id="five">
+            5
+          </button>
+          <button onclick="displayValue('6','number')" class="num" id="six">
+            6
+          </button>
+          <button onclick="displayValue('+','symbol')" class="num" id="add">
+            +
+          </button>
+          <button onclick="displayValue('1','number')" class="num" id="one">
+            1
+          </button>
+          <button onclick="displayValue('2','number')" class="num" id="two">
+            2
+          </button>
+          <button onclick="displayValue('3','number')" class="num" id="three">
+            3
+          </button>
+          <button onclick="displayValue('-','symbol')" class="num" id="subs">
+            -
+          </button>
+          <button onclick="displayValue('.','symbol')" class="num" id="decimal">
+            .
+          </button>
+          <button onclick="displayValue('0','number')" class="num" id="zero">
+            0
+          </button>
+          <button
+            onclick="displayValue('/','symbol')"
+            class="num"
+            id="division"
+          >
+            /
+          </button>
+          <button
+            onclick="displayValue('x','symbol')"
+            class="num"
+            id="multiply"
+          >
+            x
+          </button>
+        </div>
+
+        <div class="reset-equalto">
+          <button onclick="resetButton()" class="num" id="resetbutton">
+            Reset
+          </button>
+          <button onclick="equalTo()" class="num" id="calculate">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
